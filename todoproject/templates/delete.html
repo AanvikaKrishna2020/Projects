@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{%block content %}
+
+
+<form method="POST">
+    {% csrf_token %}
+
+
+  <p style=color:Coral;text-align:center;font-size:250%;">
+      "Are you Sure Delete!!!"
+    </p>
+  <div style="text-align:center">
+ <button type="submit" class="btn btn-danger" >confirm</button>
+</div>
+
+</form>
+
+{% endblock %}

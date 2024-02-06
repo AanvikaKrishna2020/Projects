@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+       <div class="col-md-12">
+            <div class="banner">
+                <div class="banner-text">
+
+                   <h1>Update</h1>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+<form method="POST" class="p-3 shadow" >
+
+
+
+  {% csrf_token %}
+  {{f.as_p}}
+
+
+  <button type="submit" class="btn btn-success">confirm</button>
+</form>
+
+</div>
+
+<style>
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+</style>
+
+{% endblock %}
